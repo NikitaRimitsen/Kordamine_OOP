@@ -6,5 +6,8 @@ koer.print_Info();
 koer.print_Haal();
 Koer veelkoer = new Koer(koer);
 veelkoer.muudaNimi("Barsik");
+veelkoer.muudaVarv("Hall");
+veelkoer.muudaKaal(40);
+veelkoer.muudaVanus(5);
 
 veelkoer.print_Info();

@@ -37,5 +37,7 @@ namespace Kordamine_OOP
         }
         public void muudaNimi(string uusNimi) { nimi = uusNimi; }
         public void muudaVarv(string uusVarv) { varv = uusVarv; }
+        public void muudaKaal(string uusKaal) { varv = uusKaal; }
+        public void muudaVanus(string uusVanus) { varv = uusVanus; }
     }
 }
