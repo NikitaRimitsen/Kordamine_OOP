@@ -15,6 +15,8 @@ namespace Kordamine_OOP
         public double kaal;
         public int vanus;
         public bool elav; //kui true, siis elav; kui false, siis on surnud
+        //public sugu hamsterSugu;
+        public bool kehapikkus;
 
         public Koduloom() { }
         public Koduloom(string nimi, string varv, sugu loomaSugu, double kaal = 0.0, int vanus = 0, bool elav = false) 

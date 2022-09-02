@@ -8,8 +8,8 @@ namespace Kordamine_OOP
 {
     class Koer : Koduloom
     {
-        public string toug_;//tõug - порода
-        public enum toug { mops, pudel, taksa, mastif};
+        //public string toug_;//tõug - порода
+        public enum toug { Mops, Pudel, Taksa, Mastif};
         public toug Toug;
         public Koer(toug Toug, string nimi, string varv, sugu loomaSugu, double kaal, int vanus, bool elav) : base(nimi, varv, loomaSugu, kaal, vanus, elav)
         {
@@ -33,11 +33,11 @@ namespace Kordamine_OOP
 
         public override void print_Info()
         {
-            Console.WriteLine("{0} {1} {2} ta on {3} ja tema kaal on {4} ja ta on {5} aastat vana", Toug, varv, nimi, loomaSugu, kaal, vanus);
+            Console.WriteLine("{0} {1} {2} ta on {3} ja tema kaal on {4} kg. ja ta on {5} aastat vana", Toug, varv, nimi, loomaSugu, kaal, vanus);
         }
         public void muudaNimi(string uusNimi) { nimi = uusNimi; }
         public void muudaVarv(string uusVarv) { varv = uusVarv; }
-        public void muudaKaal(string uusKaal) { varv = uusKaal; }
-        public void muudaVanus(string uusVanus) { varv = uusVanus; }
+        public void muudaKaal(int uusKaal) { kaal = uusKaal; }
+        public void muudaVanus(int uusVanus) { vanus = uusVanus; }
     }
 }
