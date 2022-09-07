@@ -1,0 +1,3 @@
+Sarik,punane,7
+Bobik,Haal,2
+Bob,Haal,1

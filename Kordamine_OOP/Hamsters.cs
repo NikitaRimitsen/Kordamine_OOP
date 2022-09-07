@@ -35,7 +35,7 @@ namespace Kordamine_OOP
 
         public override void print_Info()
         {
-            Console.WriteLine("{0} hamsters. Nimi: {1} {2} ta on {3} ja tema kaal on {4} gramm ja ta on {5} aastat vana", Toug, nimi, varv, loomaSugu, kaal, vanus);
+            Console.WriteLine($"Toug:{Toug} hamsters.\nNimi: {nimi}\nVärv on {varv}\nTa on {loomaSugu} ja tema kaal on {kaal} gramm\n{vanus} aastat vana {elav}\n");
         }
 
         public void muudatNimi(string uusNimi) { nimi = uusNimi; }

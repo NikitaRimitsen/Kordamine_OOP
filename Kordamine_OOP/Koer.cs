@@ -15,6 +15,11 @@ namespace Kordamine_OOP
         {
             this.Toug = Toug;
         }
+        public Koer(string nimi, string varv)
+        {
+            this.nimi = nimi;
+            this.varv = varv;
+        }
         public Koer(Koer koer)//kloonimiseks
         {
             this.Toug = koer.Toug;
@@ -33,7 +38,7 @@ namespace Kordamine_OOP
 
         public override void print_Info()
         {
-            Console.WriteLine("{0} {1} {2} ta on {3} ja tema kaal on {4} kg. ja ta on {5} aastat vana", Toug, varv, nimi, loomaSugu, kaal, vanus);
+            Console.WriteLine($"Toug:{Toug}\nVärv:{varv} \nNimi: {nimi}\nTa on {loomaSugu} ja tema kaal on {kaal} kg\n{vanus} aastat vana\n");
         }
         public void muudaNimi(string uusNimi) { nimi = uusNimi; }
         public void muudaVarv(string uusVarv) { varv = uusVarv; }
